@@ -22,6 +22,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
+  gem 'cucumber'
 end
 
 group :development do
