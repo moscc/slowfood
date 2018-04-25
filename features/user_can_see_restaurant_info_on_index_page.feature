@@ -8,5 +8,3 @@ Scenario: Visitor hits index and sees info about restaurant
   Then I should see "Eat"
   And I should see "Kungsgatan 10"
   And I should see "132 20 Stockholm"
-
-  
