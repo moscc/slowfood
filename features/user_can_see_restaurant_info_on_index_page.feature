@@ -5,8 +5,6 @@ Feature: User can see restaurant info on index page
 
 Scenario: Visitor hits index and sees info about restaurant
   Given I visit the application
-  Then I should see "Eat"
+  Then I should see "Eats"
   And I should see "Kungsgatan 10"
   And I should see "132 20 Stockholm"
-
-  

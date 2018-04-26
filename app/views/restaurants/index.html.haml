@@ -1,3 +1,12 @@
-%h1 Eat
+%h1 Eats
 %p
   Kungsgatan 10, 132 20 Stockholm
+
+-@products.each do |product|
+  %p
+    = product.name + ':  '
+    = product.desc + '.'
+    %br
+    Price:
+    = product.price
+    Kr.
