@@ -1,0 +1,22 @@
+%h1 Add new product
+=form_with scope: :product, url: products_path ,local: true do |form|
+  %p
+    =form.label :name
+    =form.text_field :name
+
+  %p
+    =form.label 'Description'
+    =form.text_area :desc
+
+  %p
+    =form.label :price
+    =form.number_field :price
+
+  %p
+    =form.label 'Category'
+    =form.number_field :category_id
+
+  %p
+    =form.submit
+
+=link_to 'Back', products_path
