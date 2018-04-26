@@ -1,9 +1,9 @@
 #navbar
   %ul
     %list-style-type_none
-      %a{href: products_path} Home
+      =link_to 'Home', products_path
     %list-style-type_none
-      %a{href: '/products/new'} Add New Product
+      =link_to 'Add New Product', new_product_path
     %list-style-type_none
       Orders
     %list-style-type_none

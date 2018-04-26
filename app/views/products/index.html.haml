@@ -1,13 +1,13 @@
-%h1 Eats
+%h1 Eats Slow Food
 %p
   Kungsgatan 10, 132 20 Stockholm
 
--@products.each do |product|
-  %p
-    %a{href: 'products/'+product.id.to_s}
-      = product.name + ':  '
-    = product.desc + '.'
-    %br
-    Price:
-    = product.price
-    Kr.
+%table
+  %tr
+    %th Item
+    %th Price
+
+  -@products.each do |product|
+    %tr
+      %td=link_to product.name, product_path(product)
+      %td= product.price
