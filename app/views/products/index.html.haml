@@ -4,7 +4,8 @@
 
 -@products.each do |product|
   %p
-    = product.name + ':  '
+    %a{href: 'products/'+product.id.to_s}
+      = product.name + ':  '
     = product.desc + '.'
     %br
     Price:
