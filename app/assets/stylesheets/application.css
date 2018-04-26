@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+table, th, td {
+   border-bottom: 1px solid #ddd;
+   text-align: center;
+   padding: 5px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}

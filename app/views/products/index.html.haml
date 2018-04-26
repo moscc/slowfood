@@ -5,10 +5,9 @@
 %table
   %tr
     %th Item
-    %th Description
+    %th Price
 
   -@products.each do |product|
     %tr
-      %td= product.name
+      %td=link_to product.name, product_path(product)
       %td= product.price
-      %td=link_to 'Display', product_path(product)
