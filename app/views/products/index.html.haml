@@ -6,8 +6,10 @@
   %tr
     %th Item
     %th Price
+    %th
 
   -@products.each do |product|
     %tr
-      %td=link_to product.name, product_path(product)
+      %td= link_to product.name, product_path(product)
       %td= product.price
+      %td= link_to 'Edit', edit_product_path(product)

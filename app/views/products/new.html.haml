@@ -1,5 +1,5 @@
 %h1 Add new product
-=form_with scope: :product, url: products_path ,local: false do |form|
+=form_with scope: :product, url: products_path ,local: true do |form|
   %p
     =form.label 'Name'
     =form.text_field :name
