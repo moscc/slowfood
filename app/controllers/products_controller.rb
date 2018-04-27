@@ -3,8 +3,17 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
-  # def new
-  # end
+  def show
+    @product = Product.find(params[:id])
+  end
+
+  def new
+    @product = Product.new
+  end
+
+  def edit
+    @product = Product.find(params[:id])
+  end
 
   def create
     @product = Product.new(product_params)
@@ -24,11 +33,11 @@ class ProductsController < ApplicationController
     end
   end
 
-  def show
+  def destroy
     @product = Product.find(params[:id])
+    @product.destroy
+    redirect_to products_path
   end
-
-  def delete
 
   private
 
